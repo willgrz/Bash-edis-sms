@@ -1,0 +1,3 @@
+#sms sending script for the EDIS SMS API:
+#http://www.edis.at/versand-von-sms-nachrtichten-ueber-web-interface-und-massenversand_8.htm
+#syntax: ./sendsms DESTNMBR SENDER MSG
