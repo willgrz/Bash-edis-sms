@@ -48,5 +48,5 @@ SENDER=$(urlencode "$SENDER")
 
 for seek in $(seq 0 918 "${#TEXT}"); do
 	TEXTPART=$(urlencode "${TEXT:seek:918}")
-	echo curl -s "http://www.http2sms.com/sms/?id=$LOGIN&pw=$PASSWD&dnr=$NUMBER&snr=$SENDER&msg=$TEXT"
+	curl -s "http://www.http2sms.com/sms/?id=$LOGIN&pw=$PASSWD&dnr=$NUMBER&snr=$SENDER&msg=$TEXT"
 done
