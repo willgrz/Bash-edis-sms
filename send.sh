@@ -10,12 +10,9 @@ PASSWD=XXXXX
 # Do not edit anything below this line! #
 
 # grab text, dest number and sending application
-NUMBER=$1
-SENDER=$2
-TEXT=$@
-
-# fix text already, workaround for spaces in message
-TEXT=$(echo $TEXT | awk '{for (i = 3; i <= NF; i++) printf("%s ", $i); }')
+NUMBER="$1"; shift
+SENDER="$2"; shift
+TEXT="$*"
 
 #### dest number input validation and fixes ####
 # various number fixes
